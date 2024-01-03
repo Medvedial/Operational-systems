@@ -2,13 +2,23 @@ Develop a console program Main and two utility programs (service programs) Creat
 
 Utility Creator creates a binary file, the name and number of records of which are obtained via the command line. The file records are entered from the console and have the following structure:
 
-struct employee { int num; // employee's ID char name[10]; // employee's name double hours; // hours worked };
+struct employee { 
+  int num; // employee's ID 
+  char name[10]; // employee's name 
+  double hours; // hours worked 
+};
 
 Utility Reporter creates a text file containing an ordered list of employees with their corresponding wages. The report is generated based on the binary file created by the Creator program.
 
-The utility receives the following data via the command line: 1.1. Name of the source binary file. 1.2. Report file name. 1.3. Hourly wage.
+The utility receives the following data via the command line:
+1.1. Name of the source binary file.
+1.2. Report file name.
+1.3. Hourly wage.
 
-The report contains the following lines: 2.1. Header: Report on the file "source binary file name." 2.2. Line: Employee number, employee name, hours worked, salary. 2.3. List of employees line by line. Each line contains information from the corresponding record in the binary file, and the last column of the line is the accrued salary = number of hours worked * hourly wage.
+The report contains the following lines:
+2.1. Header: Report on the file "source binary file name."
+2.2. Line: Employee number, employee name, hours worked, salary.
+2.3. List of employees line by line. Each line contains information from the corresponding record in the binary file, and the last column of the line is the accrued salary = number of hours worked * hourly wage.
 
 Main program performs the following actions:
 
